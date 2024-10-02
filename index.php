@@ -2,7 +2,7 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-    <body style="background-color: white;">
+    <body style="background-color: light blue;">
     <h1 style="color: white; font-weight: bold;">Homework 3</h1>
  
 
