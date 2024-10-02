@@ -1,7 +1,6 @@
 <?php
-
 require_once("util-db.php");
-require_once("model-artists.php);
+require_once("model-artists.php");
 
 $pageTitle = "Artists";
 include "view-header.php";
