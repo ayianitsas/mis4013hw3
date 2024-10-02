@@ -27,16 +27,13 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="artists.php">Artists</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="post-result.php">Post Result</a>
+          <a class="nav-link" href="labels.php">Labels</a>
         </li>
            <li class="nav-item">
-          <a class="nav-link" href="get.php">Get</a>
-        </li>
-           <li class="nav-item">
-          <a class="nav-link" href="get-result.php">Get Result</a>
+          <a class="nav-link" href="artists-with-labels.php">Artists with labels</a>
         </li>
       </ul>
     </div>
