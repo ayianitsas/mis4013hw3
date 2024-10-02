@@ -1,5 +1,5 @@
 <?php
-?>function selectArtists() {
+function selectArtists() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT artist_id, artist_name, artist_genre FROM `artist`");
@@ -13,3 +13,4 @@
         throw $e;
     }
 }
+?>
