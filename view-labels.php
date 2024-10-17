@@ -10,12 +10,12 @@
   </thead>
     <tbody>
 <?php
-while ($artist = $artists->fetch_assoc()) {
+while ($label = $labels->fetch_assoc()) {
 ?>
   <tr>
-    <td><?php echo $artist['artist_id']; ?></td>
-    <td><?php echo $artist['artist_name']; ?></td>
-    <td><?php echo $artist['artist_genre']; ?></td>
+    <td><?php echo $label['label_id']; ?></td>
+    <td><?php echo $label['label_name']; ?></td>
+    <td><?php echo $label['label_yearestablished']; ?></td>
   </tr>
 <?php
 }
