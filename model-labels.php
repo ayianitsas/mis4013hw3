@@ -2,7 +2,7 @@
 function selectLabels() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT label_id, label_name, label_yearsestablished FROM `label`");
+        $stmt = $conn->prepare("SELECT label_id, label_name, label_yearestablished FROM `label`");
 
         $stmt->execute();
         $result = $stmt->get_result();
