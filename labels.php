@@ -4,7 +4,7 @@ require_once("model-labels.php");
 
 $pageTitle = "Labels";
 include "view-header.php";
-$artists = selectArtists();
+$labels = selectLabels();
 include "view-labels.php";
 include "view-footer.php";
 ?>
