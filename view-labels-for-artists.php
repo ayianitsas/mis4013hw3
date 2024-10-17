@@ -6,7 +6,7 @@
     <th>ID</th>
     <th>Name</th>
     <th>Year Established</th>
-    <th>Album Title</th>
+    <th>Record Title</th>
     <th>Year</th>
     </tr>
   </thead>
