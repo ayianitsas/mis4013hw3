@@ -6,6 +6,7 @@
     <th>ID</th>
     <th>Name</th>
     <th>Year Established</th>
+      <th></th>
     </tr>
   </thead>
     <tbody>
@@ -16,6 +17,12 @@ while ($label = $labels->fetch_assoc()) {
     <td><?php echo $label['label_id']; ?></td>
     <td><?php echo $label['label_name']; ?></td>
     <td><?php echo $label['label_yearestablished']; ?></td>
+    <td>
+      <form method="post" action="albums-by-label.php">
+        <input type="hidden" name="cid" value="<?php echo $label['label_id']; ?>">
+        <button type="submit" class="btn btn-primary">Albums</button>
+      </form>
+    </td>
   </tr>
 <?php
 }
