@@ -1,8 +1,8 @@
 <?php
-function selectLabelsForArtists($aid) {
+function selectArtistsOfAlbums($aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT c.label_id, label_name, label_yearestablished, title, year FROM `label` c join album s on s.label_id = c.label_id where s.artist_id=?");
+        $stmt = $conn->prepare("SELECT c.artist_id, artist_name, artist_genre FROM `artist` c join genre s on s.artist_id = c.artist_id where s.album_id=?");
         $stmt->bind_param("i", $aid);
 
         $stmt->execute();
@@ -15,3 +15,5 @@ function selectLabelsForArtists($aid) {
     }
 }
 ?>
+
+<!-- SELECT c.label_id, label_name, label_yearestablished, title, year FROM `label` c join album s on s.label_id = c.label_id where s.artist_id=?
