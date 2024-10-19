@@ -36,10 +36,13 @@
           <a class="nav-link" href="artists-with-labels.php">Artists with Labels</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="genres.php">Genres</a>
+          <a class="nav-link" href="albums.php">Albums</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="albums.php">Albums</a>
+          <a class="nav-link" href="albums-by-genre.php">Albums by Genre</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="genres.php">Genres</a>
         </li>
       </ul>
     </div>
