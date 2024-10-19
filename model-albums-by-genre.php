@@ -2,7 +2,7 @@
 function selectAlbums() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT artist_id, artist_name, artist_genre FROM `artist`");
+        $stmt = $conn->prepare("SELECT album_id, title, year FROM `album`");
 
         $stmt->execute();
         $result = $stmt->get_result();
@@ -14,10 +14,10 @@ function selectAlbums() {
     }
 }
 
-function selectLabelsForArtists($aid) {
+function selectAlbumsByGenre($aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT c.label_id, label_name, label_yearestablished, title, year FROM `label` c join album s on s.label_id = c.label_id where s.artist_id=?");
+        $stmt = $conn->prepare("SELECT c.genre_id, genre_name, popular_year, FROM `Genres` c join label s on s.genre_id = c.genre_id where s.album_id=?");
         $stmt->bind_param("i", $aid);
 
         $stmt->execute();
