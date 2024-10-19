@@ -35,6 +35,9 @@
            <li class="nav-item">
           <a class="nav-link" href="artists-with-labels.php">Artists with Labels</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="artists.php">Genres</a>
+        </li>
       </ul>
     </div>
   </div>
