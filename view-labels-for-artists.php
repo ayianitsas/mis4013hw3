@@ -6,8 +6,6 @@
     <th>ID</th>
     <th>Name</th>
     <th>Year Established</th>
-    <th>Record Title</th>
-    <th>Year</th>
     </tr>
   </thead>
     <tbody>
@@ -18,8 +16,6 @@ while ($label = $labels->fetch_assoc()) {
     <td><?php echo $label['label_id']; ?></td>
     <td><?php echo $label['label_name']; ?></td>
     <td><?php echo $label['label_yearestablished']; ?></td>
-    <td><?php echo $label['title']; ?></td>
-    <td><?php echo $label['year']; ?></td>
   </tr>
 <?php
 }
