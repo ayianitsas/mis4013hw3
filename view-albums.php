@@ -18,7 +18,7 @@ while ($album = $albums->fetch_assoc()) {
     <td><?php echo $album['album_id']; ?></td>
     <td><?php echo $album['title']; ?></td>
     <td><?php echo $album['year']; ?></td>
-    <td><a href="artists-of-album.php?id=<?php echo $artist['album_id']; ?>">Artists</a></td>
+    <td><a href="artists-of-albums.php?id=<?php echo $artist['album_id']; ?>">Artists</a></td>
   </tr>
 <?php
 }
