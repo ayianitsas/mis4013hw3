@@ -38,6 +38,9 @@
          <li class="nav-item">
           <a class="nav-link" href="genres.php">Genres</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="albums.php">Albums</a>
+        </li>
       </ul>
     </div>
   </div>
