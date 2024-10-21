@@ -10,16 +10,16 @@ while ($album = $albums->fetch_assoc()) {
       <p class="card-text">
       <ul class="list-group">
 <?php
-  $genres = selectLabelsForArtists($album['album_id']);
+  $genres = selectArtistsOfAlbums($album['album_id']);
   while ($genre = $genres->fetch_assoc()) {
 ?>
-    <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?></li>
+    <li class="list-group-item"><?php echo $genre['genre_name']; ?> - <?php echo $genre['popular_year']; ?></li>
 <?php    
   }
 ?>
       </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Genre: <?php echo $artist['artist_genre']; ?></small></p>
+      <p class="card-text"><small class="text-body-secondary">Label: <?php echo $album['label_name']; ?></small></p>
     </div>
   </div>
 <?php
