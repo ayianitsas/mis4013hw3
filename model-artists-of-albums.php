@@ -1,5 +1,5 @@
 <?php
-function selectArtistsOfAlbums($1) {
+function selectArtistsOfAlbums($i) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT artist_id, artist_name, artist_genre FROM `artist` join Genres on artist_id = artist_id");
