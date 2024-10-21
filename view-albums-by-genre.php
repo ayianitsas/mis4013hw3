@@ -10,7 +10,7 @@ while ($album = $albums->fetch_assoc()) {
       <p class="card-text">
       <ul class="list-group">
 <?php
-  $Genres = selectLabelsForArtists($album['album_id']);
+  $genres = selectLabelsForArtists($album['album_id']);
   while ($genre = $genres->fetch_assoc()) {
 ?>
     <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?></li>
