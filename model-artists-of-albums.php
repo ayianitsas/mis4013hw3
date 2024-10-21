@@ -2,7 +2,7 @@
 function selectArtistsOfAlbums($aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT c.artist_id, artist_name, artist_genre FROM `artist` c join Genres s on s.artist_id = c.artist_id where s.album_id=?");
+        $stmt = $conn->prepare("SELECT * FROM `artist` WHERE artist_id=1");
         $stmt->bind_param("i", $aid);
 
         $stmt->execute();
