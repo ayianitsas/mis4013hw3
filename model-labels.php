@@ -14,3 +14,18 @@ function selectLabels() {
     }
 }
 ?>
+
+function insertLabel($cLName, $cYearEst) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `label` (`label_name`, `label_yearestablished`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $cLName, $cYearEst);
+        $success = $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
