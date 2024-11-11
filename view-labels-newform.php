@@ -18,7 +18,7 @@
     <form method="post" action="">
         <div class="mb-3">
             <label for="cName" class="form-label">Label Name</label>
-            <input type="text" class="form-control" id="cid" name="cid">
+            <input type="text" class="form-control" id="cName" name="cName">
           </div>
         <div class="mb-3">
             <label for="cYear" class="form-label">Year Established</label>
