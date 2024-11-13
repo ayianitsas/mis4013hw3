@@ -46,3 +46,4 @@ while ($artist = $artists->fetch_assoc()) {
     </div>
   </div>
 }
+}
