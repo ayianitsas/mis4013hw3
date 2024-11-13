@@ -30,13 +30,11 @@ function selectLabelsForArtists($aid) {
     }
 }
 
-
-
-function insertGenre($aid, $cid, $cYearEst, $genre) {
+function insertLabel($cLName, $cYearEst) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `section` (`artist_id`, `label_id`, 'label_yearestablished', 'genre_name') VALUES (?, ?)");
-        $stmt->bind_param("ss", $aid, $cid, $cYearEst, $genre);
+        $stmt = $conn->prepare("INSERT INTO `label` (`label_name`, `label_yearestablished`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $cLName, $cYearEst);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -47,11 +45,11 @@ function insertGenre($aid, $cid, $cYearEst, $genre) {
 }
 
 
-function updateGenre($aid, $cid, $cYearEst, $genre, $gid) {
+function updateLabel($cLName, $cYearEst, $lid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `genre` set `artist_id` = ?, `label_id` = ?, 'label_yearestablished' = ?, 'genre_name' = ? where genre_id = ?");
-        $stmt->bind_param("ssi", $aid, $cid, $cYearEst, $genre, $gid);
+        $stmt = $conn->prepare("update `label` set `label_name` = ?, `label_yearestablished` = ? where label_id = ?");
+        $stmt->bind_param("ssi", $cLName, $cYearEst, $lid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -62,11 +60,11 @@ function updateGenre($aid, $cid, $cYearEst, $genre, $gid) {
 }
 
 
-function deleteGenre($gid) {
+function deleteLabel($lid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from genre where genre_id=?");
-        $stmt->bind_param("i", $gid);
+        $stmt = $conn->prepare("delete from label where label_id=?");
+        $stmt->bind_param("i", $lid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
