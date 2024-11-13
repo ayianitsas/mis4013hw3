@@ -29,4 +29,50 @@ function selectLabelsForArtists($aid) {
         throw $e;
     }
 }
+
+
+
+function insertGenre($aid, $cid, $cYearEst, $genre) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `section` (`artist_id`, `label_id`, 'label_yearestablished', 'genre_name') VALUES (?, ?)");
+        $stmt->bind_param("ss", $aid, $cid, $cYearEst, $genre);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function updateGenre($aid, $cid, $cYearEst, $genre, $gid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update `genre` set `artist_id` = ?, `label_id` = ?, 'label_yearestablished' = ?, 'genre_name' = ? where genre_id = ?");
+        $stmt->bind_param("ssi", $aid, $cid, $cYearEst, $genre, $gid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function deleteGenre($gid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from genre where genre_id=?");
+        $stmt->bind_param("i", $gid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
