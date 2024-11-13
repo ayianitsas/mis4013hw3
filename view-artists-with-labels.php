@@ -39,6 +39,14 @@ while ($artist = $artists->fetch_assoc()) {
 
   
   <td>
+    
+      <div class="row">
+  <div class="col">
+  </div>
+  <div class="col-auto">
+
+
+    
       <form method="post" action="">
         <input type="hidden" name="cid" value="<?php echo $label['label_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
@@ -49,6 +57,8 @@ while ($artist = $artists->fetch_assoc()) {
         </button>
       </form>
     </td>
+      </div>
+</div>
 
 
 
