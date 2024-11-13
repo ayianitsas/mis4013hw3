@@ -1,8 +1,11 @@
 
 
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <h1>Artists with Labels</h1>
+
+
+
+
+<h1>Artists with Labels</h1>
   <div style="margin-left: auto;">
     <?php include "view-artists-with-labels-newform.php"; ?>
   </div>
@@ -13,6 +16,11 @@
 
 
 
+    
+
+
+
+    
     
 <?php
 while ($artist = $artists->fetch_assoc()) {
