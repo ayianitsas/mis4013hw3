@@ -1,26 +1,13 @@
-
-
-
-
-
-
-
+<?php
+include "view-artists-with-labels-newform.php";
+?>
 <h1>Artists with Labels</h1>
-  <div style="margin-left: auto;">
-    <?php include "view-artists-with-labels-newform.php"; ?>
-  </div>
-</div>
-<div class="card-group">
-  <!-- Content here -->
-</div>
+  <div class="card-group">
 
 
 
     
 
-
-
-    
     
 <?php
 while ($artist = $artists->fetch_assoc()) {
