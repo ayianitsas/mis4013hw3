@@ -30,7 +30,7 @@ while ($artist = $artists->fetch_assoc()) {
       <div class="row">
   <div class="col">
   </div>
-  <div class="col-auto">
+  <div class="col-auto ms-2">
     <?php
   include "view-labels-editform.php";  
     ?>
