@@ -1,7 +1,9 @@
-<h1>Artists with Labels</h1>
-  <?php
+
+<?php
 include "view-artists-with-labels-newform.php";
 ?>
+<h1>Artists with Labels</h1>
+
 <div class="card-group">
 
 
