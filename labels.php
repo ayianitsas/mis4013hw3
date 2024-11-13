@@ -6,7 +6,7 @@ $pageTitle = "Labels";
 include "view-header.php";
 
 if (isset($_POST['actionType'])) {
-  switch ($_POST['actionType]) {
+  switch ($_POST['actionType']) {
     case "Add":
       insertLabel($_POST['cName'], $_POST['cYear']);
       break;
