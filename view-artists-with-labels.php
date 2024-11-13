@@ -1,7 +1,13 @@
+<div class="row">
+  <div class="col">
+<h1>Artists with Labels</h1>
+  </div>
+  <div class="col-auto">
 <?php
 include "view-artists-with-labels-newform.php";
 ?>
-<h1>Artists with Labels</h1>
+  </div>
+</div>
   <div class="card-group">
 
 
@@ -18,11 +24,12 @@ while ($artist = $artists->fetch_assoc()) {
       <p class="card-text">
       <ul class="list-group">
 <?php
-  include "view-labels-editform.php";  
   $labels = selectLabelsForArtists($artist['artist_id']);
   while ($label = $labels->fetch_assoc()) {
 ?>
-    <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?></li>
+    <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?>
+  include "view-labels-editform.php";  
+    </li>
 <?php    
   }
 ?>
