@@ -1,6 +1,6 @@
 
 <div class="row">
-  <div class="col">
+
 <h1>Artists with Labels</h1>
   </div>
   <div class="card-group">
@@ -8,7 +8,7 @@
 include "view-artists-with-labels-newform.php";
 ?>
   </div>
-</div>
+
 
 
 
