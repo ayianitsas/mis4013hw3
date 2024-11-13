@@ -26,7 +26,7 @@ while ($artist = $artists->fetch_assoc()) {
 
 
   <?php
-include "view-labels-editform.php";
+include "view-artists-with-labels-editform.php";
 ?>
     </td>
     <td>
