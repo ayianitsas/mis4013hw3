@@ -25,23 +25,15 @@ while ($artist = $artists->fetch_assoc()) {
   $labels = selectLabelsForArtists($artist['artist_id']);
   while ($label = $labels->fetch_assoc()) {
 ?>
-    <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?>
-
       <div class="row">
   <div class="col">
+    <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?>
+
   </div>
   <div class="col-auto ms-3">
     <?php
   include "view-labels-editform.php";  
     ?>
-  </div>
-</div>
-
-  
-  <td>
-    
-      <div class="row">
-  <div class="col">
   </div>
   <div class="col-auto ms-3">
 
@@ -56,20 +48,8 @@ while ($artist = $artists->fetch_assoc()) {
           </svg>
         </button>
       </form>
-    </td>
       </div>
 </div>
-
-
-
-
-
-      
-  <div class="card-group">
-
-
-
-    
     </li>
 <?php    
   }
