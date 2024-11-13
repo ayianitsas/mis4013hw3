@@ -40,12 +40,7 @@ include "view-artists-with-labels-editform.php";
         </button>
       </form>
     </td>
-    <td>
-      <form method="post" action="albums-by-label.php">
-        <input type="hidden" name="cid" value="<?php echo $label['label_id']; ?>">
-        <button type="submit" class="btn btn-primary">Albums</button>
-      </form>
-    </td>
+
   </tr>
 <?php
 }
