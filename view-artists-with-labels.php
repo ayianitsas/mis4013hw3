@@ -10,10 +10,6 @@ include "view-artists-with-labels-newform.php";
 </div>
   <div class="card-group">
 
-
-
-    
-
     
 <?php
 while ($artist = $artists->fetch_assoc()) {
@@ -28,9 +24,19 @@ while ($artist = $artists->fetch_assoc()) {
   while ($label = $labels->fetch_assoc()) {
 ?>
     <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?>
+
+      <div class="row">
+  <div class="col">
+  </div>
+  <div class="col-auto">
     <?php
   include "view-labels-editform.php";  
     ?>
+  </div>
+</div>
+  <div class="card-group">
+
+    
     </li>
 <?php    
   }
