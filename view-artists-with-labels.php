@@ -1,9 +1,11 @@
 <h1>Artists with Labels</h1>
 <div class="card-group">
 
+  <?php
+include "view-artists-with-labels-newform.php";
+?>
+
 <?php
-
-
 while ($artist = $artists->fetch_assoc()) {
 ?>
   <div class="card">
