@@ -29,6 +29,9 @@ while ($label = $labels->fetch_assoc()) {
     <td><?php echo $label['label_name']; ?></td>
     <td><?php echo $label['label_yearestablished']; ?></td>
     <td>
+<?php
+include "view-labels-editform.php";
+?>
     </td>
     <td>
       <form method="post" action="">
