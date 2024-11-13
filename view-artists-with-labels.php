@@ -15,6 +15,7 @@ while ($artist = $artists->fetch_assoc()) {
       <p class="card-text">
       <ul class="list-group">
 <?php
+  include "view-labels-editform.php";
   $labels = selectLabelsForArtists($artist['artist_id']);
   while ($label = $labels->fetch_assoc()) {
 ?>
@@ -30,9 +31,7 @@ while ($artist = $artists->fetch_assoc()) {
 
 
 
-    <?php
-include "view-labels-editform.php";
-?>
+ 
     </td>
     <td>
       <form method="post" action="">
@@ -45,12 +44,7 @@ include "view-labels-editform.php";
         </button>
       </form>
     </td>
-    <td>
-      <form method="post" action="albums-by-label.php">
-        <input type="hidden" name="cid" value="<?php echo $label['label_id']; ?>">
-        <button type="submit" class="btn btn-primary">Albums</button>
-      </form>
-    </td>
+
   </tr>
 <?php
 }
