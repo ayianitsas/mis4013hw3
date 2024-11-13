@@ -24,6 +24,7 @@ include "view-artists-with-labels-editform.php";
 
   </tr>
 
+<?php
 while ($artist = $artists->fetch_assoc()) {
 ?>
   <div class="card">
@@ -48,7 +49,3 @@ while ($artist = $artists->fetch_assoc()) {
 
 
 
-<?php
-
-?>
-</div>
