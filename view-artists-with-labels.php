@@ -2,7 +2,8 @@
 <div class="card-group">
 
 <?php
-include "view-artists-with-labels-newform.php";
+
+
 while ($artist = $artists->fetch_assoc()) {
 ?>
   <div class="card">
@@ -25,7 +26,7 @@ while ($artist = $artists->fetch_assoc()) {
   </div>
 
 
-  <?php
+<?php
 include "view-artists-with-labels-editform.php";
 ?>
     </td>
