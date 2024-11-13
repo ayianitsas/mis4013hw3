@@ -49,6 +49,6 @@ while ($artist = $artists->fetch_assoc()) {
 
 
 <?php
-}
+
 ?>
 </div>
