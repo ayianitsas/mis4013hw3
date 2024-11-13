@@ -1,15 +1,15 @@
 
-<?php 
-include "view-artists-with-labels-newform.php";
-?>
+
+
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <h1>Artists with Labels</h1>
-  <button style="margin-left: auto;">Button</button>
+  <div style="margin-left: auto;">
+    <?php include "view-artists-with-labels-newform.php"; ?>
+  </div>
 </div>
 <div class="card-group">
   <!-- Content here -->
 </div>
-
 
 
 
