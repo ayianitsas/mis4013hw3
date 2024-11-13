@@ -16,6 +16,7 @@ while ($artist = $artists->fetch_assoc()) {
       <ul class="list-group">
 <?php
   include "view-labels-editform.php";
+?>
   <td>
       <form method="post" action="">
         <input type="hidden" name="cid" value="<?php echo $label['label_id']; ?>">
@@ -44,7 +45,10 @@ while ($artist = $artists->fetch_assoc()) {
   </div>
 
 
+   </td> 
+  
 
+  </tr> 
  
 
 <?php
