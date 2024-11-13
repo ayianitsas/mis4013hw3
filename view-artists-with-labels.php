@@ -45,7 +45,4 @@ while ($artist = $artists->fetch_assoc()) {
       <p class="card-text"><small class="text-body-secondary">Genre: <?php echo $artist['artist_genre']; ?></small></p>
     </div>
   </div>
-
-
-
-
+}
