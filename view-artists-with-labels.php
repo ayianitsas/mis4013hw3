@@ -28,7 +28,9 @@ while ($artist = $artists->fetch_assoc()) {
   while ($label = $labels->fetch_assoc()) {
 ?>
     <li class="list-group-item"><?php echo $label['label_name']; ?> - <?php echo $label['label_yearestablished']; ?>
+    <?php
   include "view-labels-editform.php";  
+    ?>
     </li>
 <?php    
   }
