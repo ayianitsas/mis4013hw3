@@ -30,6 +30,41 @@ function selectLabelsForArtists($aid) {
     }
 }
 
+
+function selectArtistsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT artist_id, artist_name, FROM `artist` order by artist_name");
+
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function selectLabelsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT label_id, label_name, FROM `label` order by label_name");
+
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+
+
 function insertLabel($cLName, $cYearEst) {
     try {
         $conn = get_db_connection();
