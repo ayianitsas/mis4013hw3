@@ -19,7 +19,7 @@
         <div class="mb-3">
             <label for="cName" class="form-label">Label Name</label>
 <?php
-$artistList = selectArtistForInput();
+$artistList = selectArtistsForInput();
 include "view-artist-input-list.php";
 ?>
         
