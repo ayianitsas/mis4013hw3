@@ -39,7 +39,7 @@ function selectArtistsForInput() {
 
         $stmt->execute();
         $result = $stmt->get_result();
-        $stmt->close(); // Close the statement
+        $stmt->close(); // Close statement
         $conn->close(); // Close the database connection
 
         return $result;
