@@ -18,7 +18,12 @@
     <form method="post" action="">
         <div class="mb-3">
             <label for="cName<?php echo $label['label_id']; ?>" class="form-label">Label Name</label>
-            <input type="text" class="form-control" id="cName<?php echo $label['label_id']; ?>" name="cName" value="<?php echo $label['label_name']; ?>">
+<?php
+$artistList = selectArtistsForInput();
+$selectedArtist = $label['artist_id'];
+include "view-artists-input-list.php";
+?>
+          
           </div>
         <div class="mb-3">
             <label for="cYear<?php echo $label['label_id']; ?>" class="form-label">Year Established</label>
