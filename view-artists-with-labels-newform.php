@@ -20,6 +20,7 @@
             <label for="cName" class="form-label">Label Name</label>
 <?php
 $artistList = selectArtistsForInput();
+$selectedArtist = 0;
 include "view-artists-input-list.php";
 ?>
         
