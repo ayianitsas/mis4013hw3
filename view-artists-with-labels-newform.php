@@ -16,7 +16,10 @@
             </div>
             <div class="modal-body">
                 <!-- Form with action for Artists with labels page -->
-                <form method="post" action="/artists-with-labels">
+                <form method="post" action="">
+
+
+                    
                     <div class="mb-3">
                         <label for="artistSelect" class="form-label">Artist Name</label>
                         <?php
