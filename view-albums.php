@@ -6,7 +6,7 @@
 
      
     <tr>
-    <the><strong>ID</strong></th>
+    <th><strong>ID</strong></th>
     <th><strong>Title</strong></th>
     <th><strong>Year</strong></th>
       <th></th>
