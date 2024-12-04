@@ -6,7 +6,7 @@
 
   <thead>
     <tr>
-    <the><strong>ID</strong></th>
+    <th><strong>ID</strong></th>
     <th><strong>Name</strong></th>
     <th><strong>Genre</strong></th>
 
