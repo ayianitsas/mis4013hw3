@@ -10,7 +10,6 @@ include "view-artists-with-labels-newform.php";
 </div>
   <div class="card-group">
 
- <card style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
 
     
 <?php
