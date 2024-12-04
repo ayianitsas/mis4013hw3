@@ -16,7 +16,7 @@
       </div>
       <div class="modal-body">
   
-        <form method="post" action="/artists-with-labels">
+        <form method="post" action="artists-with-labels">
 
         <div class="mb-3">
             <label for="cName" class="form-label">Artist Name</label>
