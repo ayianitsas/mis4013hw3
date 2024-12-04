@@ -1,9 +1,10 @@
 <h1>Albums</h1>
 <div class="table-responsive">
   <table class="table">
+      <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
   <thead>
 
-       <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
+     
     <tr>
     <th>ID</th>
     <th>Title</th>
@@ -14,6 +15,8 @@
     </tr>
   </thead>
     <tbody>
+      <table style="background-color: #B17D85; color: black; width: 100%; border-collapse: collapse;">
+
 <?php
 while ($album = $albums->fetch_assoc()) {
 ?>
