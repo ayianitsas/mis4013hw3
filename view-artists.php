@@ -8,8 +8,8 @@
     <tr>
     <the><strong>ID</strong></th>
 
-      <th style="text-align: left;"><strong>Name</strong></th>
-<th style="text-align: left;"><strong>Genre</strong></th>
+    <th><strong>Name</strong></th>
+    <th><strong>Genre</strong></th>
 
       <th></th>
       
