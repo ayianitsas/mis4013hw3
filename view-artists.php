@@ -1,6 +1,9 @@
 <h1>Artists</h1>
 <div class="table-responsive">
   <table class="table">
+
+    <table style="background-color: #9D5D67; color: black; border-collapse: collapse; width: 100%;">
+
   <thead>
     <tr>
     <th>ID</th>
