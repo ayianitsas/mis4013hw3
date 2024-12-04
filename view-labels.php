@@ -13,9 +13,9 @@ include "view-labels-newform.php";
      <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Year Established</th>
+    <the><strong>ID</strong></th>
+    <th><strong>Name</strong></th>
+    <th><strong>Year Established</strong></th>
       <th></th>
       <th></th>
       <th></th>
