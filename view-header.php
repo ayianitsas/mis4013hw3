@@ -50,5 +50,7 @@
   </div>
 </nav>
 
-        <header style="background-color: #A2B0BD; color: white; padding: 20px; text-align: center;">
+        <header
+          style="background-image: linear-gradient(#A2B0BD, #C0BDE4); padding: 20px; text-align: center;">
+      
     </header>
