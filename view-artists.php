@@ -11,6 +11,21 @@
 <th style="text-align: left;"><strong>Genre</strong></th>
 
       <th></th>
+
+
+th {
+  text-align: left; /* Align headers to the left */
+  padding-left: 10px; /* Optional: Add padding for a better look */
+}
+
+td {
+  text-align: left; /* Ensure text alignment matches headers */
+  padding-left: 10px; /* Ensure consistent padding */
+}
+
+
+
+      
       
     </tr>
   </thead>
