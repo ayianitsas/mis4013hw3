@@ -2,7 +2,7 @@
 <div class="table-responsive">
   <table class="table">
 
-    <table style="background-color: #9D5D67; color: black; border-collapse: collapse; width: 100%;">
+    <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
 
   <thead>
     <tr>
