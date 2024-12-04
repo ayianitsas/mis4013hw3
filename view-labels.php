@@ -10,6 +10,7 @@ include "view-labels-newform.php";
 </div>
 <div class="table-responsive">
   <table class="table">
+     <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
     <th>ID</th>
