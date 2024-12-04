@@ -7,25 +7,19 @@
   <thead>
     <tr>
     <th><strong>ID</strong></th>
-<th style="text-align: left;"><strong>Name</strong></th>
-<th style="text-align: left;"><strong>Genre</strong></th>
+
 
       <th></th>
 
+      <style>
+  .left-align {
+    text-align: left;
+  }
+</style>
 
-th {
-  text-align: left; /* Align headers to the left */
-  padding-left: 10px; /* Optional: Add padding for a better look */
-}
+<th class="left-align"><strong>Name</strong></th>
+<th class="left-align"><strong>Genre</strong></th>
 
-td {
-  text-align: left; /* Ensure text alignment matches headers */
-  padding-left: 10px; /* Ensure consistent padding */
-}
-
-
-
-      
       
     </tr>
   </thead>
