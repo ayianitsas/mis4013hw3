@@ -6,9 +6,9 @@
 
   <thead>
     <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Genre</th>
+    <the><strong>ID</strong></th>
+    <th><strong>Name</strong></th>
+    <th><strong>Genre</strong></th>
       <th></th>
       
     </tr>
