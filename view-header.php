@@ -14,6 +14,14 @@
     
   </head>
   <body>
+
+    header style="background-color: #A2B0BD; color: white; padding: 20px; text-align: center;">
+        <h1><?php echo htmlspecialchars($pageTitle); ?></h1>
+    </header>
+    
+    
+
+    
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
