@@ -7,18 +7,9 @@
   <thead>
     <tr>
     <th><strong>ID</strong></th>
+    <th><strong>Name</strong></th>
+    <th><strong>Genre</strong></th>
 
-
-      <th></th>
-
-      <style>
-  .left-align {
-    text-align: left;
-  }
-</style>
-
-<th class="left-align"><strong>Name</strong></th>
-<th class="left-align"><strong>Genre</strong></th>
 
       
     </tr>
