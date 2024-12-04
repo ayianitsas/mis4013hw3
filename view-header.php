@@ -54,6 +54,6 @@
 </nav>
 
         <header
-          style="background-image: linear-gradient(to right, #C1979D,#CDACB1, #D7BDC1, #DFCACD); padding: 20px; text-align: center;">
+          style="background-image: linear-gradient(to right, #C1979D, #CDACB1, #D7BDC1, #CDACB1); padding: 20px; text-align: center;">
       
     </header>
