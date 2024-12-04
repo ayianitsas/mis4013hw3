@@ -51,6 +51,6 @@
 </nav>
 
         <header
-          style="background-image: linear-gradient(#A2B0BD, #C0BDE4); padding: 20px; text-align: center;">
+          style="background-image: linear-gradient(to right, red , yellow); padding: 20px; text-align: center;">
       
     </header>
