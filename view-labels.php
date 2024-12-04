@@ -13,7 +13,7 @@ include "view-labels-newform.php";
      <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
-    <the><strong>ID</strong></th>
+    <th><strong>ID</strong></th>
     <th><strong>Name</strong></th>
     <th><strong>Year Established</strong></th>
       <th></th>
