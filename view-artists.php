@@ -14,6 +14,7 @@
     </tr>
   </thead>
     <tbody>
+          <table style="background-color: #B17D85; color: black; width: 100%; border-collapse: collapse;">
 <?php
 while ($artist = $artists->fetch_assoc()) {
 ?>
