@@ -17,14 +17,35 @@
       <div class="modal-body">
     <form method="post" action="">
         <div class="mb-3">
-            <label for="cName<?php echo $label['label_id']; ?>" class="form-label">Label Name</label>
+            <label for="cName<?php echo $label['label_id']; ?>" class="form-label">Artist Name</label>
 <?php
 $artistList = selectArtistsForInput();
 $selectedArtist = $label['artist_id'];
 include "view-artists-input-list.php";
 ?>
-          
+
           </div>
+
+
+
+    <div class="mb-3">
+            <label for="cName<?php echo $label['label_id']; ?>" class="form-label">Label Name</label>
+<?php
+$labelList = selectLabelsForInput();
+$selectedLabel = $label['label_id'];
+include "view-labels-input-list.php";
+?>
+
+          </div>
+
+
+
+
+
+
+
+
+        
         <div class="mb-3">
             <label for="cYear<?php echo $label['label_id']; ?>" class="form-label">Year Established</label>
             <input type="text" class="form-control" id="cYear<?php echo $label['label_id']; ?>" name="cYear" value="<?php echo $label['label_yearestablished']; ?>">
