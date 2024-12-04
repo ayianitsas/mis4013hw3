@@ -18,7 +18,6 @@
 while ($genre = $genres->fetch_assoc()) {
 ?>
   <tr>
-    <table style="background-color: #B17D85; color: black; width: 100%; border-collapse: collapse;">
 
     <td><?php echo $genre['genre_id']; ?></td>
     <td><?php echo $genre['genre_name']; ?></td>
