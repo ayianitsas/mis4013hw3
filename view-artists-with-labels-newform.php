@@ -17,7 +17,7 @@
       <div class="modal-body">
     <form method="post" action="">
         <div class="mb-3">
-            <label for="cName" class="form-label">Label Name</label>
+            <label for="cName" class="form-label">Artist Name</label>
 <?php
 $artistList = selectArtistsForInput();
 $selectedArtist = 0;
