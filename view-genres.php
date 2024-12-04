@@ -2,13 +2,15 @@
 <div class="table-responsive">
   <table class="table">
   <thead>
+
+      <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
     <tr>
     <th>ID</th>
     <th>Genre</th>
     <th>Popular Year</th>
       <th></th>
 
-  <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
+
     </tr>
   </thead>
     <tbody>
