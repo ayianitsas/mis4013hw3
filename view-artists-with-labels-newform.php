@@ -23,8 +23,15 @@ $artistList = selectArtistsForInput();
 $selectedArtist = 0;
 include "view-artists-input-list.php";
 ?>
-        
           </div>
+
+   <div class="mb-3">
+            <label for="cYear" class="form-label">Label Name</label>
+            <input type="text" class="form-control" id="cYear" name="cYear">
+          </div>
+
+        
+        
         <div class="mb-3">
             <label for="cYear" class="form-label">Year Established</label>
             <input type="text" class="form-control" id="cYear" name="cYear">
