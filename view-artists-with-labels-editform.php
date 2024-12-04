@@ -27,24 +27,6 @@ include "view-artists-input-list.php";
           </div>
 
 
-
-    <div class="mb-3">
-            <label for="cName<?php echo $label['label_id']; ?>" class="form-label">Label Name</label>
-<?php
-$labelList = selectLabelsForInput();
-$selectedLabel = $label['label_id'];
-include "view-labels-input-list.php";
-?>
-
-          </div>
-
-
-
-
-
-
-
-
         
         <div class="mb-3">
             <label for="cYear<?php echo $label['label_id']; ?>" class="form-label">Year Established</label>
