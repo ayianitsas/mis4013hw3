@@ -1,9 +1,9 @@
 <h1>Genres</h1>
 <div class="table-responsive">
   <table class="table">
-  <thead>
 
       <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
+  <thead>
     <tr>
     <th>ID</th>
     <th>Genre</th>
@@ -18,6 +18,8 @@
 while ($genre = $genres->fetch_assoc()) {
 ?>
   <tr>
+    <table style="background-color: #B17D85; color: black; width: 100%; border-collapse: collapse;">
+
     <td><?php echo $genre['genre_id']; ?></td>
     <td><?php echo $genre['genre_name']; ?></td>
     <td><?php echo $genre['popular_year']; ?></td>
