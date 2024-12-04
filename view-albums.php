@@ -6,9 +6,9 @@
 
      
     <tr>
-    <th>ID</th>
-    <th>Title</th>
-    <th>Year</th>
+    <the><strong>ID</strong></th>
+    <th><strong>Title</strong></th>
+    <th><strong>Year</strong></th>
       <th></th>
  
       
