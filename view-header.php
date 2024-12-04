@@ -11,7 +11,7 @@
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   }
   body {
-    background-color: #853541;
+    background-color: #CDACB1;
   }
 </style>
     
@@ -54,6 +54,6 @@
 </nav>
 
         <header
-          style="background-image: linear-gradient(to right, #853541, #9D5D67); padding: 20px; text-align: center;">
+          style="background-image: linear-gradient(to right, #CDACB1, #D7BDC1, #DFCACD); padding: 20px; text-align: center;">
       
     </header>
