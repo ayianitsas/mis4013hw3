@@ -20,7 +20,6 @@ function insertAlbum($aTitle, $aYear) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `album` (`title`, `year`) VALUES (?, ?)");
          $stmt->bind_param("ss", $aTitle, $aYear);
-
         $success = $stmt->execute();
       
         $conn->close();
@@ -30,6 +29,10 @@ function insertAlbum($aTitle, $aYear) {
         throw $e;
     }
 }
+
+
+
+
 
 function updateAlbum($aTitle, $aYear, $aid) {
     try {
