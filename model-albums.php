@@ -47,7 +47,7 @@ function updateAlbum($aTitle, $aYear, $aid) {
     }
 }
 
-function deleteAlbum(aid) {
+function deleteAlbum($aid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from album where album_id=?");
