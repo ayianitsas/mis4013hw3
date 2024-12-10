@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Test";
+$pageTitle = "Home";
 include "view-header.php";
 ?>
     <body style="background-color: purple;">
