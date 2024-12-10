@@ -15,11 +15,17 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <form method="post" action="">
+                 <div class="mb-3">
+                   <label for="aTitle" class="form-label">Album Title</label>
+                   <input type="text" class="form-control" id="aTitle" name="aTitle">
+                 </div>
+                 <div class="mb-3">
+                        <label for="aYear" class="form-label">Album Year</label>
+                        <input type="text" class="form-control" id="aYear" name="aYear">
+                 </div>
+                 <button type="submit" class="btn btn-primary">Save</button>
+               </form>
       </div>
     </div>
   </div>
