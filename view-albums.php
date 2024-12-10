@@ -9,7 +9,7 @@
     </svg>
   </div>
 </div>
-<h1>Albums</h1>
+
 <div class="table-responsive">
   <table class="table">
       <table style="background-color: #B17D85; color: black; border-collapse: collapse; width: 100%;">
