@@ -35,7 +35,10 @@ while ($album = $albums->fetch_assoc()) {
     <td><?php echo $album['title']; ?></td>
     <td><?php echo $album['year']; ?></td>
     <td>
-      
+<?php
+include "view-albums-editform.php";
+?>
+              
     </td>
     <td>
       <form method="post" action="">
