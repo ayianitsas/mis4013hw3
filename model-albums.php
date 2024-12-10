@@ -22,6 +22,7 @@ function insertAlbum($aTitle, $aYear) {
          $stmt->bind_param("ss", $aTitle, $aYear);
 
         $success = $stmt->execute();
+        mysqli_stmt->execute()
       
         $conn->close();
         return $success;
