@@ -15,11 +15,11 @@ function selectAlbums() {
 }
 
 
-function insertAlbum($aTitle, $aYear) {
+function insertAlbum($aTitle, $aYear, $aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `album` (`title`, `year`) VALUES (?, ?)");
-         $stmt->bind_param("ss", $aTitle, $aYear);
+        $stmt = $conn->prepare("INSERT INTO `album` ('artist_id', `title`, `year`) VALUES (?, ?, ?)");
+         $stmt->bind_param("iss", $aid, $aTitle, $aYear);
         $success = $stmt->execute();
       
         $conn->close();
@@ -29,7 +29,6 @@ function insertAlbum($aTitle, $aYear) {
         throw $e;
     }
 }
-
 
 
 
