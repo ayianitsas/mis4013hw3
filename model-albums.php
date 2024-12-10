@@ -13,4 +13,53 @@ function selectAlbums() {
         throw $e;
     }
 }
+
+
+function insertAlbum($aTitle, $aYear) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `album` (`title`, `year`) VALUES (?, ?)");
+         $stmt->bind_param("ss", $aTitle, $aYear);
+
+        $success = $stmt->execute();
+      
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function updateAlbum($aTitle, $aYear, $aid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update `album` set `title`= ?, `year`= ? where album_id = ?");
+         $stmt->bind_param("ssi", $aTitle, $aYear, $aid);
+
+        $success = $stmt->execute();
+      
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function deleteAlbum(aid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from album where album_id=?");
+         $stmt->bind_param("i", $aid);
+
+        $success = $stmt->execute();
+      
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
