@@ -15,7 +15,7 @@ function selectAlbums() {
 }
 
 
-function insertAlbum($aTitle, $aYear, $aid) {
+function insertAlbum($aid, $aTitle, $aYear) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `album` ('artist_id', `title`, `year`) VALUES (?, ?, ?)");
