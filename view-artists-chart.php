@@ -5,7 +5,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <?php
-// $artists is now an array of rows: [ ["artist_name" => ..., "num_labels" => ...], ... ]
+// Assuming $artists is now an array of ["artist_name" => ..., "num_labels" => ...]
 $labels = [];
 $dataValues = [];
 
