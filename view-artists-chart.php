@@ -1,8 +1,9 @@
 <h1>Labels Per Artist</h1>
 <div>
-  <canvas id="myChart"></canvas>
+  <canvas id="myChart" width="200" height="200"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 
 
