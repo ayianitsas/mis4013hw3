@@ -11,7 +11,7 @@
   const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
     datasets: [{
         data: [
@@ -24,7 +24,7 @@ while ($genre = $genres->fetch_assoc()) {
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: 'Labels Per Genre'  [
+    labels:  [
 <?php
 $genres = selectGenres();
 while ($genre = $genres->fetch_assoc()) {
