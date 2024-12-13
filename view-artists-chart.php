@@ -4,16 +4,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<?php
-// Assuming $artists is now an array of ["artist_name" => ..., "num_labels" => ...]
-$labels = [];
-$dataValues = [];
 
-foreach ($artists as $artist) {
-    $labels[] = $artist['artist_name'];
-    $dataValues[] = (int)$artist['num_labels'];
-}
-?>
 
 <script>
   const ctx = document.getElementById('myChart');
@@ -21,12 +12,26 @@ foreach ($artists as $artist) {
   new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: <?php echo json_encode($labels); ?>,
-      datasets: [{
-        data: <?php echo json_encode($dataValues); ?>,
-        backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe', '#ffce56']
-      }]
-    }
+    datasets: [{
+        data: [
+<?php
+while ($artist = $artists->fetch_assoc()) {
+      echo $artist['num_labels'] . ", ";
+}
+?>
+        ]
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+<?php
+$artists = selectArtists();
+while ($artist = $artists->fetch_assoc()) {
+      echo "'" . $artist['artist_name'] . "', ";
+}
+?>
+    ]
+},
   });
 </script>
 
