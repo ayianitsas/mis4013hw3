@@ -16,7 +16,7 @@
         data: [
 <?php
 while ($artist = $artists->fetch_assoc()) {
-      echo $artist['num_albums'] . ", ";
+      echo $artist['num_labels'] . ", ";
 }
 ?>
         ]
