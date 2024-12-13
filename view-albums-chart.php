@@ -1,4 +1,4 @@
-<h1>Albums Per Artist</h1>
+<h1>Labels Per Album</h1>
 <div style="width: 400px; height: 400px;">
   <canvas id="myChart"></canvas>
 </div>
@@ -18,7 +18,7 @@
         data: [
 <?php
 while ($album = $albums->fetch_assoc()) {
-      echo $album['num_albums'] . ", ";
+      echo $album['num_labels'] . ", ";
 }
 ?>
         ]
@@ -29,7 +29,7 @@ while ($album = $albums->fetch_assoc()) {
 <?php
 $albums = selectAlbums();
 while ($album = $albums->fetch_assoc()) {
-      echo "'" . $album['album_name'] . "', ";
+      echo "'" . $album['title'] . "', ";
 }
 ?>
     ]
