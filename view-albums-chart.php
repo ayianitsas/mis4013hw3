@@ -17,8 +17,8 @@
     datasets: [{
         data: [
 <?php
-while ($album = $albums->fetch_assoc()) {
-      echo $album['num_albums'] . ", ";
+while ($artist = $artists->fetch_assoc()) {
+      echo $artist['num_albums'] . ", ";
 }
 ?>
         ]
@@ -27,12 +27,13 @@ while ($album = $albums->fetch_assoc()) {
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
 <?php
-$albums = selectAlbums();
-while ($album = $albums->fetch_assoc()) {
-      echo "'" . $album['album_name'] . "', ";
+$artists = selectAlbums();
+while ($artist = $artists->fetch_assoc()) {
+      echo "'" . $artist['artist_name'] . "', ";
 }
 ?>
     ]
 },
   });
 </script>
+
