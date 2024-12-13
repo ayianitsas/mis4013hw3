@@ -44,16 +44,23 @@
         </li>
 
          <li class="nav-item">
+           <a class="nav-link" href="labels-chart.php">Labels Chart</a>
+         </li>
+
+
+         <li class="nav-item">
            <a class="nav-link" href="artists-chart.php">Artists Chart</a>
+         </li>
+
+          <li class="nav-item">
+           <a class="nav-link" href="albums-chart.php">Albums Chart</a>
          </li>
 
          <li class="nav-item">
            <a class="nav-link" href="genres-chart.php">Genres Chart</a>
          </li>
 
-          <li class="nav-item">
-           <a class="nav-link" href="albums-chart.php">Albums Chart</a>
-         </li>
+        
       </ul>
     </div>
   </div>
