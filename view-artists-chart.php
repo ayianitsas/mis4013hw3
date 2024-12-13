@@ -5,11 +5,11 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <?php
-// Convert the database result into arrays for labels and data
+// $artists is now an array of rows: [ ["artist_name" => ..., "num_labels" => ...], ... ]
 $labels = [];
 $dataValues = [];
 
-while ($artist = $artists->fetch_assoc()) {
+foreach ($artists as $artist) {
     $labels[] = $artist['artist_name'];
     $dataValues[] = (int)$artist['num_labels'];
 }
@@ -30,4 +30,3 @@ while ($artist = $artists->fetch_assoc()) {
   });
 </script>
 
-      
