@@ -1,4 +1,4 @@
-<h1>Artists Chart</h1>
+<h1>Labels Per Artist</h1>
 <div>
   <canvas id="myChart"></canvas>
 </div>
