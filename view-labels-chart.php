@@ -1,4 +1,4 @@
-<h1>Labels Years Established</h1>
+<h1>Labels: Year Established</h1>
 <div style="width: 400px; height: 400px;">
   <canvas id="myChart"></canvas>
 </div>
@@ -11,15 +11,13 @@ $labelNames = [];
 $dataPoints = [];
 
 while ($label = $labelsData->fetch_assoc()) {
-    // Extract the numeric year from the "Est ####" string
-    $yearStr = $label['label_yearestablished']; // e.g. "Est 1972"
+
+    $yearStr = $label['label_yearestablished']; 
     $year = (int) filter_var($yearStr, FILTER_SANITIZE_NUMBER_INT);
     
-    // Store the label name
     $labelName = $label['label_name'];
     $labelNames[] = $labelName;
     
-    // For a category axis, you can set x to the label name directly
     $dataPoints[] = [
         'x' => $labelName,
         'y' => $year
@@ -46,12 +44,12 @@ new Chart(ctx, {
     scales: {
       x: {
         type: 'category', 
-        // Using a category axis so the x-values map directly to the label names
+
       },
       y: {
         beginAtZero: false,
         ticks: {
-          // Just return the numeric year directly
+
           callback: function(value) {
             return value; 
           }
@@ -65,7 +63,7 @@ new Chart(ctx, {
       tooltip: {
         callbacks: {
           title: function(context) {
-            // The title will show the label name from the category
+
             return context[0].label;
           },
           label: function(context) {
