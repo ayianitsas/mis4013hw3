@@ -12,7 +12,6 @@
 
   new Chart(ctx, {
     type: 'line',
-    label: 'Labels Per Genre',
     data: {
     datasets: [{
         data: [
@@ -25,7 +24,7 @@ while ($genre = $genres->fetch_assoc()) {
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: [
+    labels: 'Labels Per Genre'  [
 <?php
 $genres = selectGenres();
 while ($genre = $genres->fetch_assoc()) {
