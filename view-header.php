@@ -42,6 +42,10 @@
          <li class="nav-item">
           <a class="nav-link" href="genres.php">Genres</a>
         </li>
+
+         <li>
+           <a href="artists-chart.php">Artists Chart</a>
+         </li>
       </ul>
     </div>
   </div>
