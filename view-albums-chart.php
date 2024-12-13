@@ -5,35 +5,46 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+<?php
 
+$albumsData = selectAlbums();
+$titles = [];
+$numLabels = [];
 
+while ($album = $albumsData->fetch_assoc()) {
+    $titles[] = $album['title'];
+    $numLabels[] = (int)$album['num_labels'];
+}
+?>
 
 <script>
   const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
-    type: 'doughnut',
+    type: 'bar',
     data: {
-    datasets: [{
-        data: [
-<?php
-while ($album = $albums->fetch_assoc()) {
-      echo $album['num_labels'] . ", ";
-}
-?>
-        ]
-    }],
-
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: [
-<?php
-$albums = selectAlbums();
-while ($album = $albums->fetch_assoc()) {
-      echo "'" . $album['title'] . "', ";
-}
-?>
-    ]
-},
+      labels: <?php echo json_encode($titles); ?>,
+      datasets: [{
+        label: "Number of Labels",
+        data: <?php echo json_encode($numLabels); ?>,
+        backgroundColor: 'rgba(75, 192, 192, 0.5)', // semi-transparent teal
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: true
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
   });
 </script>
+
 
