@@ -1,5 +1,5 @@
 <h1>Labels Per Artist</h1>
-<div style="width: 200px; height: 200px;">
+<div style="width: 400px; height: 400px;">
   <canvas id="myChart"></canvas>
 </div>
 
