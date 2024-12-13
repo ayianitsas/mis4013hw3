@@ -2,7 +2,7 @@
 function selectAlbums() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT a.artist_name, COUNT(b.album_id) AS num_albums FROM artist a JOIN album b ON b.artist_id = a.artist_id GROUP BY a.artist_id, a.artist_name;");
+        $stmt = $conn->prepare("SELECT t.title, COUNT(l.label_id) AS num_labels FROM album t JOIN label l ON album_id = t.album_id GROUP BY t.album_id, t.title;");
 
 
 
