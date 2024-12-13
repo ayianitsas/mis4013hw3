@@ -2,7 +2,7 @@
 function selectGenres() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT g.genre_name, COUNT(l.label_id) AS num_labels FROM Genres a JOIN label l ON genre_id = g.genre_id GROUP BY g.genre_id, g.genre_name;");
+        $stmt = $conn->prepare("SELECT g.genre_name, COUNT(l.label_id) AS num_labels FROM Genres g JOIN label l ON genre_id = g.genre_id GROUP BY g.genre_id, g.genre_name;");
 
 
 
