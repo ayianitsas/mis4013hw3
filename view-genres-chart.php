@@ -1,4 +1,4 @@
-<h1>Labels By Genre</h1>
+<h1>Labels Per Genre</h1>
 <div style="width: 400px; height: 400px;">
   <canvas id="myChart"></canvas>
 </div>
@@ -12,6 +12,7 @@
 
   new Chart(ctx, {
     type: 'line',
+    label: 'Labels Per Genre',
     data: {
     datasets: [{
         data: [
